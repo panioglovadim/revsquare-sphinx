@@ -10,7 +10,7 @@ setup(
     author='Guillaume Pousseo',
     author_email='guillaumepousseo@revsquare.com',
     description='Install RevSquare themed template and settings to a project.',
-    long_description=open('README.txt').read(),
+    long_description=open('README.rst').read(),
     url='http://www.revsquare.com',
     license='BSD License',
     platforms=['OS Independent'],
