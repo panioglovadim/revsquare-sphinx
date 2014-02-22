@@ -15,7 +15,7 @@ setup(
     license='BSD License',
     platforms=['OS Independent'],
     packages=[
-        'revsquare_sphinx',
+        'revsquare-sphinx',
     ],
     include_package_data = True,
     classifiers=[
