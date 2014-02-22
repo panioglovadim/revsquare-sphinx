@@ -14,9 +14,6 @@ setup(
     url='http://www.revsquare.com',
     license='BSD License',
     platforms=['OS Independent'],
-    packages=[
-        'revsquare-sphinx',
-    ],
     include_package_data = True,
     classifiers=[
         'Development Status :: 0.0.1 - Production/Stable',
