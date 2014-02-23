@@ -21,3 +21,27 @@ And run:
 .. code-block::  shell-session
 
     pip install -r requirements.txt
+
+**************************
+Setup sphinx documentation
+**************************
+
+It is recommanded to install the documentation folder in the current projet so anyone in the team can access it:
+
+.. code-block::  shell-session
+
+    mkdir doc
+    cd doc
+    sphinx-quickstart
+    
+You can check all the default settings.
+
+***************
+Setup the theme
+***************
+
+In your Sphinx documentation directory, update your conf.py file with the following settings:
+
+.. code-block::  python
+
+    pip install -r requirements.txt
