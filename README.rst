@@ -40,8 +40,52 @@ You can check all the default settings.
 Setup the theme
 ***************
 
-In your Sphinx documentation directory, update your conf.py file with the following settings:
+Update your conf.py file in your Sphinx documentation directory with the following settings:
+
+On top of the document add:
+
 
 .. code-block::  python
 
-    pip install -r requirements.txt
+    import revsquare_theme
+
+Make sure you have at least the following extensions installed:
+
+.. code-block::  python
+   
+    extensions = ['sphinx.ext.autodoc', 'sphinx.ext.todo', 'sphinx.ext.viewcode']
+    
+Now add the theme by setting the *html_theme* and *revsquare_theme* parameters:
+
+.. code-block::  python
+   
+    html_theme = 'revsquare'
+    html_theme_path = revsquare_theme.get_html_theme_path()
+
+
+
+************
+Setup django
+************
+
+In order to simply link the templates wihin your website urls, simply add the following:
+
+1. In your settings.py add to the *INSTALLED_APPS*
+
+.. code-block::  python
+   
+    INSTALLED_APPS = (
+        ...
+        'revsquare_sphinx',
+        ...
+    )
+    
+2. In your root urls.py module, add to the urlpatterns (of course you can use any wildcard that you want 'doc' is just an exemple):
+
+.. code-block::  python
+    urlpatterns = patterns('',
+        ...
+
+        url(r'^doc/', include('revsquare_sphinx.urls')),
+        ...
+    )  
