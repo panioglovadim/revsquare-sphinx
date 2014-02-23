@@ -83,6 +83,7 @@ In order to simply link the templates wihin your website urls, simply add the fo
 2. In your root urls.py module, add to the urlpatterns (of course you can use any wildcard that you want 'doc' is just an exemple):
 
 .. code-block::  python
+
     urlpatterns = patterns('',
         ...
 
