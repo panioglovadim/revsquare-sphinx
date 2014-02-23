@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.conf.urls import patterns, url, include
 
+
 def get_document_root():
     """Returns the default Sphinx document root. Tries to trigger it from
     settings. 
@@ -11,5 +12,7 @@ def get_document_root():
     return settings.SPHINX_ROOT
     
 urlpatterns = patterns('',
-    (r'^doc/(?P<path>.*)$', 'django.views.static.serve', {
+    (r'^$', 'django.views.static.serve', {
+            'path': 'index.html', 'document_root': get_document_root()}),
+    (r'(?P<path>.*)$', 'django.views.static.serve', {
         'document_root': get_document_root()}))
