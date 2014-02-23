@@ -89,7 +89,7 @@ In order to simply link the templates wihin your website urls, simply add the fo
     ...
     SPHINX_ROOT = BASE_DIR + '/doc/_build/html/' 
     
-3. In your root urls.py module, add to the urlpatterns (of course you can use any wildcard that you want 'doc' is just an exemple):
+3. In your root urls.py module, add to the urlpatterns (of course you can use any wildcard that you want. 'doc' is just an exemple):
 
 .. code-block::  python
 
