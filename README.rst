@@ -80,7 +80,16 @@ In order to simply link the templates wihin your website urls, simply add the fo
         ...
     )
     
-2. In your root urls.py module, add to the urlpatterns (of course you can use any wildcard that you want 'doc' is just an exemple):
+2. Still in your settings.py add the path to your generated documentation built directory under a *SPHINX_ROOT* constant, for exemple:
+
+.. code-block::  python
+   
+    import os
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__)) 
+    ...
+    SPHINX_ROOT = BASE_DIR + '/doc/_build/html/' 
+    
+3. In your root urls.py module, add to the urlpatterns (of course you can use any wildcard that you want 'doc' is just an exemple):
 
 .. code-block::  python
 
