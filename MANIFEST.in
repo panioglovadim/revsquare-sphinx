@@ -2,3 +2,4 @@ include AUTHORS.txt
 include LICENSE.txt
 include README.rst
 recursive-include revsquare *
+recursive-include revsquare_sphinx *
