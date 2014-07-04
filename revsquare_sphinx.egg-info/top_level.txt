@@ -1,2 +1,0 @@
-revsquare_theme
-revsquare_sphinx
